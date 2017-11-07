@@ -17,6 +17,9 @@ class IndexController extends ApiController
 	 */
 	public function index()
 	{
+		echo '<pre>';
+		print_r(123);
+		die();
 	}
 
 	/**
