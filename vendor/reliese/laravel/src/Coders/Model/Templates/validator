@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Created by Reliese Model.
+ * Date: {{date}}.
+ */
+
+namespace {{namespace}};
+
+use {{parent}} as Validator;
+
+/**
+ * Class {{class}}
+ *
+ * @package {{namespace}}
+ */
+class {{class}} extends Validator
+{
+{{body}}
+}
