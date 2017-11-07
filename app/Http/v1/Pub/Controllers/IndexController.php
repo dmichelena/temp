@@ -19,14 +19,14 @@ class IndexController extends ApiController
 	public function index()
 	{
 		$data = $this->data();
-		$sended = false;
+		$sent = false;
 		if ($data['send']) {
 			$response = $this->sendToMulticines($data['data']);
 			$this->sendEmail($response);
-			$sended = true;
+			$sent = true;
 		}
 
-		echo $sended ? 'Se envió el mail' : 'No es necesario mandar el mail';
+		echo $sent ? 'Se envió el mail' : 'No es necesario mandar el mail';
 		echo '<script>';
 		echo 'location.reload();';
 		echo '</script>';
