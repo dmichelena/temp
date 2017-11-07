@@ -73,5 +73,7 @@ class IndexController extends ApiController
 		curl_close($ch);
 
 		$response = json_decode($response, true);
+
+		return $response;
 	}
 }
