@@ -57,7 +57,7 @@ class IndexController extends ApiController
 
 	private function data()
 	{
-		$url = 'https://raw.githubusercontent.com/dmichelena/dots/master/mc.json';
+		$url = 'http://35.193.161.250/?json=asd';
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
