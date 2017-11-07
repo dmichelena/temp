@@ -44,6 +44,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+	    echo 'Hubo un error';
+	    echo '<script>';
+	    echo 'location.reload();';
+	    echo '</script>';
+	    die();
     	$statusCode = method_exists($exception, 'getStatusCode') ? $exception->getStatusCode() : 500;
 
     	return response()->json($this->parseException($exception, $statusCode), $statusCode);

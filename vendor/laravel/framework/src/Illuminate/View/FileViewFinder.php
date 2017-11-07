@@ -2,6 +2,7 @@
 
 namespace Illuminate\View;
 
+use Doctrine\DBAL\Driver\PDOConnection;
 use InvalidArgumentException;
 use Illuminate\Filesystem\Filesystem;
 
